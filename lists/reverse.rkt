@@ -7,7 +7,7 @@
 ;   Input: '(a b c d)
 ;   Output: '(d c b a)
 ;   Process: Use append to create the list in reverse.
-;   Example: (append (append (append (append '(d) '()) '(c)) '(b)) '(a))
+;       Example: (append (append (append (append '(d) '()) '(c)) '(b)) '(a))
 (define (list-reverse l)
   (if (null? l)
     '()
