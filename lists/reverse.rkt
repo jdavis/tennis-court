@@ -1,5 +1,8 @@
 ; Reverse a list.
 ;
+; Run:
+;   $ racket -r lists/reverse.rkt
+;
 ; Example:
 ;   Input: '(a b c d)
 ;   Output: '(d c b a)
