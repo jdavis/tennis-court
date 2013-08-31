@@ -1,8 +1,5 @@
 ; A lat is a list of atoms.
 ;
-; Source:
-;   The Little Schemer, pg. 15
-;
 ; Run:
 ;   $ racket -r lists/lat.rkt
 ;
@@ -15,6 +12,9 @@
 ;
 ;   Input: '(a (b) c d)
 ;   Output: #f
+;
+; Source:
+;   The Little Schemer, pg. 15
 (define (lat? l)
   (if (null? l)
     #t
