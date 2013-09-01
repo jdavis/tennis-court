@@ -1,7 +1,7 @@
 ; Calculate the power of a given base.
 ;
 ; Run:
-;   $ racket -r math.rkt
+;   $ racket -r math/pow.rkt
 ;
 ; Examples:
 ;   Input: 2, 6
