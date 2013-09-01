@@ -20,5 +20,5 @@
 (display "Input List: ")
 (displayln l)
 
-(display "Output List ")
+(display "Output List: ")
 (displayln (list-reverse l))
