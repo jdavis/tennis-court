@@ -16,11 +16,10 @@
 ; Source:
 ;   The Little Schemer, pg. 15
 (define (lat? l)
-  (if (null? l)
-    #t
-    (if (list? (car l))
-      #f
-      (lat? (cdr l)))))
+  (cond
+    ((null? l) #t)
+    ((list? (car l)) #f)
+    (else (lat? (cdr l)))))
 
 (define l0 '())
 (define l1 '(a b c d))
