@@ -29,7 +29,7 @@
 (display "Input List: ")
 (displayln l0)
 
-(display "Output List ")
+(display "Output List: ")
 (displayln (member? a l0))
 
 (displayln "")
@@ -37,7 +37,7 @@
 (display "Input List: ")
 (displayln l1)
 
-(display "Output List ")
+(display "Output List: ")
 (displayln (member? a l1))
 
 (displayln "")
@@ -45,5 +45,5 @@
 (display "Input List: ")
 (displayln l2)
 
-(display "Output List ")
+(display "Output List: ")
 (displayln (member? a l2))
