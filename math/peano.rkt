@@ -22,6 +22,11 @@
                     (-- (car args))
                     (cdr args))))))))
 
+(define peano*
+  (lambda args
+    (cond
+      ((null? args) 1))))
+
 
 (define l1 '(1 2 3 4 5))
 (define l2 '(1 2 3 4 5 6 7 8 9 10))
