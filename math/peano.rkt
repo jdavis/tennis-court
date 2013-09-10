@@ -7,10 +7,10 @@
 ;
 
 ; Increment by one.
-(define (++ x) (+ 1 x))
+(define (++ x) (+ x 1))
 
 ; Decrement by one.
-(define (-- x) (+ -1 x))
+(define (-- x) (- x 1))
 
 ; Add any number of integers
 (define peano+
