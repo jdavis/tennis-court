@@ -22,6 +22,17 @@
                     (-- (car args))
                     (cdr args))))))))
 
+; Subtract any number of integers
+(define peano-
+  (lambda args
+    (cond
+      ((null? args) 0)
+      ((= 0 (car args)) (apply peano- (cdr args)))
+      (else (++ (apply peano- (cons
+                    (-- (car args))
+                    (cdr args))))))))
+
+; Multiply any number of integers
 (define peano*
   (lambda args
     (cond
