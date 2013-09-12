@@ -21,4 +21,3 @@
         (merge
           (sort-ascend (take lst mid))
           (sort-ascend (drop lst mid)))))))
-
