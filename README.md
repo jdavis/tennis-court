@@ -1,4 +1,4 @@
 tennis-court
 ============
 
-A playground for playing around with the Racket Language.
+A playground for learning functional programming with the Racket Language.
