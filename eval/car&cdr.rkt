@@ -55,10 +55,11 @@
 (define (car&cdr s lst err)
   (define (car&cdr-rec lst)
     (cond
-      ((and (list? (car lst)) (in? s (car lst))
-            (cons
-              'car
-              (car&cdr-rec (car lst)))))
+      ((and (list? (car lst))
+            (in? s (car lst)))
+       (cons
+         'car
+         (car&cdr-rec (car lst))))
       ((eq? s (car lst)) '(car))
       (else
         (cons
