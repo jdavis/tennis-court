@@ -2,6 +2,9 @@
 ; procedure should return a datum procedure that takes one argument, a list,
 ; and performs cars and cdrs until the first place that the given atom occurs.
 ;
+; Run:
+;   $ racket -r eval/car\&cdr.rkt
+;
 ; Examples:
 ;   > (car&cdr a '(c (b (a))) "Error")
 ;   '(lambda (lst) (car (cdr (cdr lst))))
