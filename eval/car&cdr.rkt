@@ -7,7 +7,7 @@
 ;   '(lambda (lst) (car (cdr (cdr lst))))
 ;
 ;   > (car&cdr x '(c (b (a))) "Error")
-;   '(lambda (lst) "Error")
+;   "Error"
 ;
 ; Source:
 ;   Given as an extra credit problem on a midterm for one of my classes.
