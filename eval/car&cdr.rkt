@@ -55,8 +55,6 @@
 (define (car&cdr s lst err)
   (define (car&cdr-rec lst)
     (cond
-      ((not (in? s lst)) err)
-      ((null? lst) err)
       ((and (list? (car lst)) (in? s (car lst))
             (cons
               'car
