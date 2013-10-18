@@ -10,8 +10,7 @@
 ;   10
 ;
 ; Source:
-;   Racket Builtin
-;   http://docs.racket-lang.org/reference/pairs.html
+;   Most imperative languages.
 (define-syntax-rule (while condition body)
   ((lambda (f) (f f))
    (lambda (while-iter)
