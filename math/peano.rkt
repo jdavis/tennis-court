@@ -35,8 +35,18 @@
 ; Multiply any number of integers
 (define peano*
   (lambda args
+    (define (iter+ i n result)
+      (cond
+        ((= i 0) result)
+        (else (iter+ (-- i) n (peano+ result n)))))
     (cond
-      ((null? args) 1))))
+      ((null? args) 1)
+      ((= 0 (car args)) (apply peano* (cdr args)))
+      (else (peano+
+              (iter+
+                (apply peano* (cdr args))
+                (car args)
+                0))))))
 
 
 (define l1 '(1 2 3 4 5))
@@ -56,3 +66,9 @@
 
 (display "Sum: ")
 (displayln (apply peano+ l2))
+
+(display "Input List: ")
+(displayln l1)
+
+(display "Product ")
+(displayln (apply peano* l1))
