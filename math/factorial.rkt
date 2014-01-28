@@ -20,3 +20,16 @@
 
 (display "Factorial of 8 = ")
 (displayln (factorial 8))
+
+; Lambda
+
+(display "Lambdas: ")
+(displayln
+  ((lambda (f n) (f f n))
+   (lambda (self n)
+     (cond
+       ((= n 1) 1)
+       (else
+
+         (* n (self self (- n 1))))))
+     4))
